@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+    
+}
+
+img, picture, video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: #ededed;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+input, textarea {
+    outline: none;
+    background-color: transparent;
+}
+
