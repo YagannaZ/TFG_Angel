@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"sass": "^1.63.2",
 		"sscss": "^0.1.2"
 	}
 }
