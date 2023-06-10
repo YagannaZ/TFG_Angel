@@ -6,11 +6,8 @@
 
 
 
-<Header></Header>
+<Header/>
 
-<!-- <slot/> -->
+<slot/>
 
-<Footer></Footer>
-<style>
-
-</style>
+<Footer/>

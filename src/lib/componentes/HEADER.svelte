@@ -11,14 +11,21 @@
         <img src={perfil_cala} alt="Perfil ciudad de calahorra">
     </div>
 </div>
+<div class="margen"/>
 
 
 
 <style lang="scss">
+    .margen
+    {
+        margin-top: 8cqw;
+    }
+
     .head
     {
         background-color: #3DC573;  
         height:5.5cqw;
+        margin-bottom: 5.5cqw;
         width: 100%;
         position: fixed;
         z-index: 50;
