@@ -4,9 +4,11 @@
     import Header from "$lib/componentes/HEADER.svelte";
 </script>
 
+
+
 <Header></Header>
 
-<slot/>
+<!-- <slot/> -->
 
 <Footer></Footer>
 <style>
