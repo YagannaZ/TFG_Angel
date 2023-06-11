@@ -19,13 +19,15 @@
     .margen
     {
         margin-top: 8cqw;
+        @media screen and (max-width: 750px) {
+			margin-top: 20cqw;
+		}
     }
 
     .head
     {
         background-color: #3DC573;  
         height:5.5cqw;
-        margin-bottom: 5.5cqw;
         width: 100%;
         position: fixed;
         z-index: 50;
@@ -39,7 +41,7 @@
         align-items: center;
 
         @media screen and (max-width: 750px) {
-			height: 8cqw;
+			height: 15cqw;
 		}
     }
 
@@ -50,6 +52,11 @@
         justify-content: center;
         width: 2cqw;
         margin-left: 3cqw;
+        @media screen and (max-width: 750px) 
+        {
+            width: 7cqw;
+            margin-left: 6cqw;
+        }
     }
     .btn-menu
     {
@@ -71,6 +78,12 @@
         {
             height: 100%;
             margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 750px) 
+        {
+            width: 50cqw;
+            margin-left: 6cqw;
         }
     }
 </style>

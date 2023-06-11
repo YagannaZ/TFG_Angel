@@ -18,9 +18,9 @@
     </div>
 
     <div class="txt">
-        <h1>
+        <h3>
             Redes sociales de Colegio Santa Teresa de Calahorra
-        </h1>
+        </h3>
     </div>
 </div>
 
@@ -34,7 +34,13 @@
         display: flex;
         align-items: center;
         margin-top: 10cqw;
-        height:12cqw;
+        height:15cqw;
+
+        @media screen and (max-width: 750px)
+        {
+            height:35cqw;
+ 
+        }
     }
 
     .cont_redes
@@ -45,18 +51,44 @@
         align-items: center;
         width: 30cqw;
 
+        @media screen and (max-width: 750px)
+        {
+            width: 60cqw; 
+        }
+
+        >div
+        {
+            width: 3cqw;
+            @media screen and (max-width: 750px)
+            {
+                width: 9cqw;
+            }
+        }
+
         >div > img{
             cursor: pointer;
         }
+        
+        
     }
 
     .txt
     {
         margin-top: 2cqw;
-        > h1{
+        
+        @media screen and (max-width: 750px) 
+        {
+            margin-top: 6cqw;
+        }
+        > h3{
             color: white;
+        @media screen and (max-width: 750px) 
+        {
+            font-size: 3.8cqw;
+        }
         }
     
+        
     }
 
 </style>
