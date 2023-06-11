@@ -4,7 +4,7 @@
 
     import pdf_r from "$lib/img/Locales/carniceria/T_carniceria.pdf"
     let pdf = pdf_r + "#view=Fit&navpanes=0"
-    let tiponegocio: any = "Carnicería"
+    let tiponegocio: any = "CARNICERÍA"
 
  
 </script>

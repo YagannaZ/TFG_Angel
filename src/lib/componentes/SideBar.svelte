@@ -11,10 +11,10 @@
         </div>
     </div>
     <div class="a-menu">
-        <a href="/">Inicio</a>
+        <a href="/carniceria">Inicio</a>
     </div>
     <div class="a-menu">
-        <a href="/">Colaboradores</a>
+        <a href="/colaboradores">Colaboradores</a>
     </div>
     <div class="a-menu">
         <a href="/">Asterics Grid</a>
