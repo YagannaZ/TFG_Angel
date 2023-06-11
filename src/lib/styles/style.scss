@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     // box-sizing: border-box;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
@@ -12,7 +12,7 @@ img, picture, video {
 }
 
 body {
-    background-color: #505050;
+    background-color: #eafff2;
 }
 
 button, a {
@@ -23,4 +23,25 @@ input, textarea {
     outline: none;
     background-color: transparent;
 }
+
+// SCROLLBAR
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #53f092; 
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #53f092; 
+    }
 
