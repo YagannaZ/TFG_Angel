@@ -1,6 +1,6 @@
 <script lang="ts">
     export let picto: any;
-    // import picto from "$lib/img/Locales/carniceria/carniceriaAR.png"
+
     export let pdf: any;
     export let tiponegocio: any;
     import t_1 from "$lib/img/Locales/carniceria/T_carniceria-1.png"
@@ -78,7 +78,7 @@
 
             
         align-items: center;
-        background-color:#ffffff;
+        background-color:rgb(239, 255, 241);
         border-radius: 20px;
         width: 45cqw;
         height: 156cqw;
@@ -124,7 +124,7 @@
             border-radius: 10px;
             box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
             overflow: hidden;
-            /* background-color:#246d41;  */
+            background-color:#6d2424;  
 
             margin-top: 2.5cqw;
 
