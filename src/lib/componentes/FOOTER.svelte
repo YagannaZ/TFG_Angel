@@ -10,17 +10,22 @@
             <img src={TW} alt="Logo blanco de Twitter"/>
         </div>
         <div class="FB">
-            <img src={FB} alt="Logo blanco de FaceBook"/>
+            <a href="https://www.facebook.com/profile.php?id=100082468414504">        
+                <img src={FB} alt="Logo blanco de FaceBook"/>
+            </a>
         </div>
         <div class="IG">
-            <img src={IG} alt="Logo blanco de Instagram"/>
+            <a href="https://www.instagram.com/teresianascalahorra/?hl=es">
+                <img src={IG} alt="Logo blanco de Instagram"/>
+            </a>
+            
         </div>
     </div>
 
     <div class="txt">
-        <h3>
+        <p>
             Redes sociales de Colegio Santa Teresa de Calahorra
-        </h3>
+        </p>
     </div>
 </div>
 
@@ -34,7 +39,9 @@
         display: flex;
         align-items: center;
         margin-top: 10cqw;
-        height:15cqw;
+        height:12cqw;
+        border-top: 2px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
 
         @media screen and (max-width: 750px)
         {
@@ -80,12 +87,15 @@
         {
             margin-top: 6cqw;
         }
-        > h3{
+        > p{
             color: white;
-        @media screen and (max-width: 750px) 
-        {
-            font-size: 3.8cqw;
-        }
+            font-size:1.5cqw;
+            font-weight:bold;
+
+            @media screen and (max-width: 750px) 
+            {
+                font-size: 3.8cqw;
+            }
         }
     
         

@@ -36,6 +36,8 @@
         justify-content: space-between;
         left: 0;
         top: 0;
+        box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
+        border-bottom: 2px solid rgb(255, 255, 255);
 
 
         align-items: center;
@@ -74,9 +76,9 @@
         margin-right: 6cqw;
         
         align-items: flex-end;
-        .img
+        > img
         {
-            height: 100%;
+            margin-top: 30px;
             margin-bottom: 0;
         }
 
