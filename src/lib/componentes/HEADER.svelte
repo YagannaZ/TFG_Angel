@@ -1,11 +1,17 @@
 <script lang="ts">
     import perfil_cala from "$lib/img/Logos/perfil_b.png"
     import menu from  "$lib/img/Logos/menu.png"
+    import {menu_open} from "$lib/componentes/vars"
+
+    function abrir_menu ()
+    {
+        $menu_open = !$menu_open; 
+    }
 </script>
 
 <div class="head">
     <div class="menu">
-        <img class="btn-menu" src={menu} alt="Botón de menu">
+        <img class="btn-menu" src={menu} alt="Botón de menu" on:click={abrir_menu}>
     </div>
     <div class="logo">
         <img src={perfil_cala} alt="Perfil ciudad de calahorra">

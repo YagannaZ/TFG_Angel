@@ -2,6 +2,8 @@
     import "$lib/styles/style.scss"
     import lema from "$lib/img/Logos/Cala.png"
 
+    // import { menu_open } from "./vars";
+
 </script>
 
 <div class="sidenav">
@@ -22,21 +24,12 @@
     <div class="a-menu">
         <a href="/">Trabajo de Alumnos</a>
     </div>
-    
-    
-    
 </div>
 
 <style lang="scss">
     .cont_lema
     {
         display: flex;
-        // justify-content:center ;
-        // background-color:#CFFFE2;
-        // border-radius: 20px;
-        // width: 45cqw;
-        // margin: auto;
-        // height: 20cqw ;
         margin-top: 2.5cqw;
         margin-bottom: 1.5cqw;
 
@@ -61,7 +54,8 @@
     }
 
     /* The sidebar menu */
-    .sidenav {
+    .sidenav 
+    {
     //   height: 100%; 
     width: 14cqw;
     //   height: 37cqw; /* Set the width of the sidebar */
@@ -77,8 +71,24 @@
     background-color: #3DC573; 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-bottom: 15px;
-    //   padding-right: 20px;
+
+    animation: Jorge 1s;
+
+		@keyframes Jorge {
+			0% {
+                left: -15%;
+			}
+
+			100% {
+				left: 0%;
+			}
+		}
     }
+
+
+    // .sidenav:hover{
+    //     background-color: blueviolet;
+    // }
 
     /* The navigation menu links */
     .sidenav a {
