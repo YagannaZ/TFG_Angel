@@ -9,7 +9,8 @@
 </script>
 
 
-    <div class="anim" class:shown={$menu_open} style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
+    <div class="anim" class:shown={$menu_open} style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover} 
+    style:--altura={$menu_open ? "100%" : "0%"}>
         {#if $menu_open}
         <div class="dark" in:fade={{ duration: 200, delay: 100 }} out:fade={{ duration: 200 }}>
             <div class="sidenav" >
@@ -57,7 +58,8 @@
     
     .anim{
         width: 100%;
-        height: 100%;
+        // height: 100%;
+        height: var(--altura);
         display: flex;
         justify-content: center;
         align-items: center;

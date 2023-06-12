@@ -10,7 +10,7 @@
     <p style="color:white">TRABAJO DE LOS ALUMNOS</p>
 </div>
 
-<iframe class="video" width="1080" height="720" src="https://www.youtube.com/embed/5uqFkosa9Vw" title="YouTube video player" 
+<iframe class="video" src="https://www.youtube.com/embed/5uqFkosa9Vw" title="YouTube video player" 
 frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 allowfullscreen/>
 
@@ -34,8 +34,9 @@ allowfullscreen/>
 .titulo
     {
         display: flex;
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
+
         margin: auto;
         width: 45cqw;
         height: 8cqw;
@@ -50,7 +51,7 @@ allowfullscreen/>
             text-align: center;
             @media screen and (max-width: 750px)
             {
-                font-size: 6cqw;
+                font-size: 5.8cqw;
             }
         } 
 
@@ -72,11 +73,20 @@ allowfullscreen/>
     margin: auto;
     width: 45cqw;
     height: 26cqw;
-    border-radius: 20px;
+    
     // background-color: rgb(173, 173, 173);
     box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
 
     margin-bottom: 3cqw;
+    width: 1080;
+    height: 720;
+
+    @media screen and (max-width: 750px)
+    {
+        width: 95%;
+        height: auto;
+        border-radius: 8px;
+    }
 }
 
 .trabajos
@@ -91,6 +101,13 @@ allowfullscreen/>
     // scroll-behavior: smooth;
     border-radius: 20px;
     background-color: white;
+
+    @media screen and (max-width: 750px)
+    {
+        border-radius: 8px;
+        width: 95%;
+        height: 285cqw;
+    }
 }
 
 
