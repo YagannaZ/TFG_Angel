@@ -86,6 +86,10 @@
     .txt
     {
         margin-top: 2cqw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         
         @media screen and (max-width: 750px) 
         {

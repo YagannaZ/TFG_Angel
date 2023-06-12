@@ -10,32 +10,55 @@
         $menu_open = !$menu_open; 
     }
 
-import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
+    import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
+
+    let innerWidth = 0;
+    const ancho = 1000;
 </script>
 
-<div class="head" 
-style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
-    <div class="menu" >
+<svelte:window bind:innerWidth />
+<div class="head" style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
+
+    {#if innerWidth >= ancho}
+    <div class="menu_dsk" >
         {#if $menu_open}
             <img class="btn-menu" src={cruz} alt="Botón de menu" on:click={abrir_menu} in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 400 }}>
         {:else}
             <img class="btn-menu" src={menu} alt="Botón de menu" on:click={abrir_menu} in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 400 }}>
         {/if}
     </div>
+
     <div class="logo">
         <img src={perfil_cala} alt="Perfil ciudad de calahorra">
     </div>
+    
+    {:else}
+        <div class="logo">
+            <img src={perfil_cala} alt="Perfil ciudad de calahorra">
+        </div>
+
+        <div class="menu_mob" >
+            {#if $menu_open}
+                <img class="btn-menu" src={cruz} alt="Botón de menu" on:click={abrir_menu} in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 400 }}>
+            {:else}
+                <img class="btn-menu" src={menu} alt="Botón de menu" on:click={abrir_menu} in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 400 }}>
+            {/if}
+        </div>
+
+    {/if}
 </div>
 <div class="margen"/>
+
 
 
 
 <style lang="scss">
     .margen
     {
+        z-index: 20;
         margin-top: 8cqw;
         @media screen and (max-width: 750px) {
-			margin-top: 20cqw;
+			// margin-top: 20cqw;
 		}
     }
 
@@ -62,7 +85,7 @@ style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={
 		}
     }
 
-    .menu
+    .menu_dsk
     {
         display: flex;
         align-items: center;
@@ -75,11 +98,30 @@ style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={
             margin-left: 6cqw;
         }
     }
+
+    .menu_mob
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2cqw;
+        margin-right: 3cqw;
+        @media screen and (max-width: 750px) 
+        {
+            width: 7cqw;
+            margin-left: 6cqw;
+        }
+    }
+
     .btn-menu
     {
         position: absolute;
         width: 2cqw;
         cursor: pointer;
+        @media screen and (max-width: 750px)
+        {
+            width: 5.5cqw;
+        }
     }
 
     .logo

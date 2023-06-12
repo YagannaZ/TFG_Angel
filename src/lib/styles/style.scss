@@ -28,6 +28,11 @@ input, textarea {
     /* width */
     ::-webkit-scrollbar {
         width: 8px;
+
+        @media screen and (max-width: 750px)
+        {
+            width: 3px;
+        }
     }
     
     /* Track */

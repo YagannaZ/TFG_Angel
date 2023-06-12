@@ -50,6 +50,7 @@
             height: 10cqw;
             border-radius: 8px;
             margin-bottom: 5cqw;
+            margin-top: 25cqw;
         }
     }
 

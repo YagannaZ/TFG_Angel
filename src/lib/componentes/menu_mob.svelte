@@ -11,7 +11,8 @@
 
     <div class="anim" class:shown={$menu_open} style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
         {#if $menu_open}
-            <div class="sidenav"  in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 400 }}>
+        <div class="dark" in:fade={{ duration: 200, delay: 100 }} out:fade={{ duration: 200 }}>
+            <div class="sidenav" >
             
                 <div class="cont_lema">
                     <div class="lema">
@@ -36,9 +37,57 @@
                 </div>
             
             </div>
+        </div>
         {/if}
     </div>
+
+
 <style lang="scss">
+
+    .dark
+    {
+        width: 100%;
+        height: 100%;
+        z-index: 30;
+        background-color: rgba(0, 0, 0, 0.404);
+        padding-top: 20cqw;
+        // background-color: #000000;
+
+    }
+    
+    .anim{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        
+        
+    }
+
+        .sidenav 
+        {
+        //   height: 100%; 
+        width: 95%;
+        margin: auto;
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1; /* Stay on top */
+        border: 3px solid #ffffff;
+        box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.4);
+        // top: 7cqw; /* Stay at the top */
+        // left:0;
+        background-color: var(--col_menus);
+        
+        padding-bottom: 3cqw;
+        }
+    
     .cont_lema
     {
         display: flex;
@@ -65,64 +114,16 @@
         margin-top: 1cqw;
     }
 
-    /* The sidebar menu */
-    .sidenav 
-    {
-    //   height: 100%; 
-    width: 14cqw;
-    //   height: 37cqw; /* Set the width of the sidebar */
-    // position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top: 3px solid #ffffff;
-    border-right: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
-    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.4);
-    // top: 7cqw; /* Stay at the top */
-    // left:0;
-    background-color: var(--col_menus);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-bottom: 15px;
-
-    
-
-
-    // &.shown 
-    // {
-    //     transform: translateX(0);
-    // }
-
-    }
-
-    .anim{
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-
-        transform: translateX(-100%);
-		transition: transform 600ms;
-         &.shown 
-        {
-            transform: translateX(0);
-        }
-    }
-
-
-    // .sidenav:hover{
-    //     background-color: blueviolet;
-    // }
-
-    /* The navigation menu links */
     .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 1.5cqw;
+    font-size: 5cqw;
     color: #ffffff;
     display: block;
     }
 
     /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover {
+    .sidenav a:focus {
     color: #000000;
     }
 
