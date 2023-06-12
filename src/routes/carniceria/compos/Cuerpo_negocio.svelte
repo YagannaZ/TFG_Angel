@@ -5,9 +5,8 @@
     export let tiponegocio: any;
     import t_1 from "$lib/img/Locales/carniceria/T_carniceria-1.png"
     import t_2 from "$lib/img/Locales/carniceria/T_carniceria-2.png"
-    
 
-    
+    import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
 
     let innerWidth = 0;
   const ancho = 750;
@@ -17,7 +16,7 @@
 
 <svelte:window bind:innerWidth />
 
-<div class="tipo_negocio">
+<div class="tipo_negocio" style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover} >
     <p style="color:white">{tiponegocio}</p>
 </div>
 
@@ -48,7 +47,7 @@
         margin: auto;
         width: 45cqw;
         height: 4cqw;
-        background-color:#3DC573; 
+        background-color:var(--col_detail); 
         border-radius: 20px;
         margin-bottom: 2cqw;
         
@@ -124,7 +123,7 @@
             border-radius: 10px;
             box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
             overflow: hidden;
-            background-color:#6d2424;  
+            // background-color:#6d2424;  
 
             margin-top: 2.5cqw;
 

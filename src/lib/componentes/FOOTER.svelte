@@ -2,9 +2,13 @@
     import TW from "$lib/img/Redes/Redes-blanco-01.png"
     import FB from "$lib/img/Redes/Redes-blanco-02.png"
     import IG from "$lib/img/Redes/Redes-blanco-03.png"
+
+    import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
+
 </script>
 
-<div class="footer">
+<div class="footer" style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
+
     <div class="cont_redes">
         <div class="TW">
             <img src={TW} alt="Logo blanco de Twitter"/>
@@ -33,14 +37,14 @@
 
     .footer
     {
-        background-color: #3DC573;  
+        background-color: var(--col_menus);  
         justify-content: center;
         flex-direction: column;
         display: flex;
         align-items: center;
         margin-top: 10cqw;
         height:12cqw;
-        border-top: 2px solid rgb(255, 255, 255);
+        border-top: 3px solid rgb(255, 255, 255);
         box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
 
         @media screen and (max-width: 750px)

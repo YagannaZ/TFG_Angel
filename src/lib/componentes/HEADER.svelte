@@ -1,17 +1,26 @@
 <script lang="ts">
     import perfil_cala from "$lib/img/Logos/perfil_b.png"
-    import menu from  "$lib/img/Logos/menu.png"
+    import menu from "$lib/img/Logos/menu.png"
+    import cruz from "$lib/img/Logos/Cruz.png"
     import {menu_open} from "$lib/componentes/vars"
 
+    import { fade } from "svelte/transition";
     function abrir_menu ()
     {
         $menu_open = !$menu_open; 
     }
+
+import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
 </script>
 
-<div class="head">
-    <div class="menu">
-        <img class="btn-menu" src={menu} alt="Botón de menu" on:click={abrir_menu}>
+<div class="head" 
+style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
+    <div class="menu" >
+        {#if $menu_open}
+            <img class="btn-menu" src={cruz} alt="Botón de menu" on:click={abrir_menu} in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 400 }}>
+        {:else}
+            <img class="btn-menu" src={menu} alt="Botón de menu" on:click={abrir_menu} in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 400 }}>
+        {/if}
     </div>
     <div class="logo">
         <img src={perfil_cala} alt="Perfil ciudad de calahorra">
@@ -32,7 +41,7 @@
 
     .head
     {
-        background-color: #3DC573;  
+        background-color: var(--col_menus);  
         height:5.5cqw;
         width: 100%;
         position: fixed;
@@ -43,7 +52,7 @@
         left: 0;
         top: 0;
         box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
-        border-bottom: 2px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgb(255, 255, 255);
 
 
         align-items: center;
@@ -68,6 +77,8 @@
     }
     .btn-menu
     {
+        position: absolute;
+        width: 2cqw;
         cursor: pointer;
     }
 

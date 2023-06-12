@@ -5,8 +5,6 @@
   import Footer from "$lib/componentes/FOOTER.svelte";
   import Header from "$lib/componentes/HEADER.svelte";
 
-  import {menu_open} from "$lib/componentes/vars"//ABRIR Y CERRAR MENU
-
   let innerWidth = 0;
   const ancho = 1000;
 </script>
@@ -19,11 +17,9 @@
 
 <Header/>
 {#if innerWidth >= ancho}
-  {#if $menu_open}
-
+  
   <SideBar/>
-
-  {/if}
+  
 {/if}
 <slot/>
 

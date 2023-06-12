@@ -10,10 +10,3 @@
 </script>
 
 <Cuerpo_negocio {picto} {pdf} {tiponegocio}/>
-
-
-<style lang="scss">
-
-
-
-</style>

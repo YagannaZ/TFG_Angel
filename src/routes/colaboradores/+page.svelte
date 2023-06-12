@@ -5,10 +5,11 @@
     import logo2 from "$lib/img/colaboradores/col2.png"
     import logo3 from "$lib/img/colaboradores/col4.png"
     import logo4 from "$lib/img/colaboradores/col1.png"
-   
+
+    import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
 </script>
 
-<div class="titulo">
+<div class="titulo" style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
     <p style="color:white">COLABORADORES</p>
 </div>
 
@@ -29,7 +30,7 @@
         margin: auto;
         width: 45cqw;
         height: 4cqw;
-        background-color:#3DC573; 
+        background-color: var(--col_detail);
         border-radius: 20px;
         margin-bottom: 4cqw;
         

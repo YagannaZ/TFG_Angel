@@ -4,10 +4,12 @@
     export let ancho: any = "45cqw";
     export let link: any;
     export let h_txt:any = "2.3cqw";
+
+    import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
 </script>
 
 
-    <div class="colaborador" style:--ancho={ancho} style:--h_txt={h_txt}>
+    <div class="colaborador" style:--ancho={ancho} style:--h_txt={h_txt} style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
         <a class="logo" href={link}>
             <img src={logo} alt="Logo de colaborador">
         </a>
@@ -63,7 +65,7 @@
         justify-content: center;
         align-items: center;
 
-        background-color:#3DC573;
+        background-color: var(--col_detail);
         margin: auto;
         margin-top: 1cqw;
         width: 30cqw;
