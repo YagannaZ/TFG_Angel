@@ -3,8 +3,8 @@
 
     export let pdf: any;
     export let tiponegocio: any;
-    import t_1 from "$lib/img/Locales/carniceria/T_carniceria-1.png"
-    import t_2 from "$lib/img/Locales/carniceria/T_carniceria-2.png"
+    export let t_1 :string;
+    export let t_2 :string;
 
     import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
 
@@ -50,8 +50,8 @@
         background-color:var(--col_detail); 
         border-radius: 20px;
         margin-bottom: 2cqw;
-        
-        > *
+
+        > p
         {
             font-size: 3cqw;
             font-weight: bold;

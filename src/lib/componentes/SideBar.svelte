@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="a-menu">
-                    <a href="/carniceria">Inicio</a>
+                    <a href="/">Inicio</a>
                 </div>
 
                 <div class="a-menu" >

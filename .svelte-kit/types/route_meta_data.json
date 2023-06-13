@@ -1,6 +1,10 @@
 {
+	"/(index)": [],
 	"/": [],
 	"/alumnos": [],
 	"/carniceria": [],
-	"/colaboradores": []
+	"/colaboradores": [],
+	"/joyeria": [],
+	"/optica": [],
+	"/tienda_ropa": []
 }

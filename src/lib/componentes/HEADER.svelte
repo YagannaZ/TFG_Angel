@@ -11,6 +11,7 @@
     }
 
     import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
+    // style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}
 
     let innerWidth = 0;
     const ancho = 1000;
@@ -140,8 +141,8 @@
         align-items: flex-end;
         > img
         {
-            margin-top: 30px;
-            margin-bottom: 0;
+            margin-top: 40px;
+            margin-bottom: 50;
         }
 
         @media screen and (max-width: 750px) 
