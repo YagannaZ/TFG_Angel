@@ -94,9 +94,12 @@
         margin-left: 3cqw;
         @media screen and (max-width: 750px) 
         {
+
+            
             width: 7cqw;
             margin-left: 6cqw;
         }
+
     }
 
     .menu_mob
