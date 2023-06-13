@@ -1,5 +1,6 @@
 <script lang="ts">
     
+    export let ruta: string;
     export let url: string;
     export let nombre: string;
 
@@ -8,10 +9,9 @@
 
 <div class="presentacion" style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
         <div class="info">
-            <iframe title="Una ciudad de todos y para todos" frameborder="0"  
-            src={url}
-            type="text/html" allowscriptaccess="always" allowfullscreen="true" 
-            scrolling="yes" allownetworking="all"/>
+            <a href={url}>
+                <img src={ruta} alt="Presentación de los alumnos de 5º y 6º de primaria. Plataforma: Genially."/>
+            </a>
         </div>
         <div class="nombre">
             <p>{nombre}</p>
@@ -24,31 +24,28 @@
     {
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 95%;
-        height: 22cqw;
+        height: 40cqw;
         margin-inline:auto ;
-        margin-top: 1.5cqw;
+        // margin-top: 1.5cqw;
+        margin: 4cqw;
     }
 
         .info
         {
             margin: 1cqw;
-            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border-radius: px;
             overflow: hidden;
-            width: 60%;
-            height: 20cqw;
+            width: 70%;
+            height: 40cqw;
             // background-color: rgb(142, 255, 127);
-
-            > iframe
-            {
-                display: block;
-                width: 100%;
-                height: 100%;
- 
-            }
+           
         }
         .nombre
         {
@@ -56,16 +53,16 @@
             justify-content: center;
             align-items: center;
             margin: 1cqw;
-            border-radius: 10px;
-            padding: 0.5cqw;
-            
+            border-radius: 5px;
+
             background-color: var(--col_detail);
-            width: 40%;
+            width: 50%;
             height: fit-content;
+            padding: 1cqw;
             >*
             {
                 color: rgb(0, 0, 0);
-                font-size: 2cqw;
+                font-size: 4cqw;
                 font-weight: bold;
            }
         }

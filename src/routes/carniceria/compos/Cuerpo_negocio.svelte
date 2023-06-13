@@ -78,7 +78,7 @@
 
             
         align-items: center;
-        background-color:rgb(239, 255, 241);
+        background-color:rgb(255, 255, 255);
         border-radius: 20px;
         width: 45cqw;
         height: 156cqw;
