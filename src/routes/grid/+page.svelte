@@ -71,7 +71,7 @@ import picto5 from "$lib/img/Locales/zapateria/zapateria.png"
         {
             width: 95cqw; 
             height: 10cqw;
-            border-radius: 8px;
+            border-radius: 5px;
             margin-bottom: 5cqw;
             margin-top: 25cqw;
         }
@@ -88,10 +88,18 @@ import picto5 from "$lib/img/Locales/zapateria/zapateria.png"
 
 
         width: 65cqw;
-        // height: fit-content;
+        
         height: 45cqw;
 
         border-radius: 15px;
+
+        @media screen and (max-width: 750px)
+        {
+            width: 90%;
+            border-radius: 5px;
+            height: fit-content;
+            padding: 2cqw;
+        }
     }
 
     .trio
@@ -109,14 +117,13 @@ import picto5 from "$lib/img/Locales/zapateria/zapateria.png"
     {  
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
         gap: 0px 0px;
         grid-auto-flow: row;
         gap: 25px ;
         grid-template-areas:
             "A B C"
-            "D E ."
-            ". . .";
+            "D E .";
         
         margin-top: 1cqw;
 }

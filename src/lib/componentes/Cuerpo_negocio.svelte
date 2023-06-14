@@ -22,7 +22,7 @@
 
 <div class="cont_pdf">
     <div class="picto">
-        <a href="https://arasaac.org/pictograms/es/3007/carnicer%C3%ADa">
+        <a href={picto} target="_blank">
             <img src={picto} alt="Pictografía identificativa del negocio">
         </a>
     </div>

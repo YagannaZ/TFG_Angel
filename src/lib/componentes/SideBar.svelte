@@ -23,6 +23,10 @@
                     <a href="/">Inicio</a>
                 </div>
 
+                <div class="a-menu">
+                    <a href="/grid">Comercios</a>
+                </div>
+
                 <div class="a-menu" >
                     <a href="/colaboradores">Colaboradores</a>
                 </div>

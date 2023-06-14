@@ -38,6 +38,9 @@ import picto5 from "$lib/img/Locales/zapateria/zapateria.png"
         background-color: #fff;
 
         border-radius: 10px;
+
+        @media screen and (max-width: 750px)
+        {width: 100%;}
     }
 
     img{
@@ -47,6 +50,11 @@ import picto5 from "$lib/img/Locales/zapateria/zapateria.png"
     p{
         font-size: 1.5cqw;
         text-decoration: none;
+
+        @media screen and (max-width: 750px)
+        {
+            font-size: 3cqw;
+        }
     }
 
     a{
