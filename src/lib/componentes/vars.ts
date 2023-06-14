@@ -2,7 +2,8 @@ import { writable } from "svelte/store";
 
 export let menu_open  = writable(false);
 
-export let room = writable(false);
+export let roomA = writable(true);
+export let roomB = writable(false);
 
 
 //COLORES

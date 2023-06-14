@@ -13,9 +13,9 @@
                 <img src={ruta} alt="Presentación de los alumnos de 5º y 6º de primaria. Plataforma: Genially."/>
             </a>
         </div>
-        <div class="nombre">
+        <!-- <div class="nombre">
             <p>{nombre}</p>
-        </div>
+        </div> -->
     </div>
 
 <style lang="scss">

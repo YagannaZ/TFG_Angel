@@ -142,7 +142,6 @@
     justify-content: center;
     align-items: center;
 
-    
     margin-top: 9cqw ;
 
     position: absolute;
@@ -165,11 +164,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: ease 0.5s;
 
     &:hover
     {
         background-color: rgba(0, 0, 0, 0);
-        transition: ease 0.5s;
+        
     }
 }
 

@@ -13,9 +13,9 @@
             type="text/html" allowscriptaccess="always" allowfullscreen="true" 
             scrolling="yes" allownetworking="all"/>
         </div>
-        <div class="nombre">
+        <!-- <div class="nombre">
             <p>{nombre}</p>
-        </div>
+        </div> -->
     </div>
 
 <style lang="scss">
