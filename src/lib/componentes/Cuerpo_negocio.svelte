@@ -30,8 +30,13 @@
         {#if innerWidth >= ancho}
             <embed src={pdf} type="application/pdf" width="100%" height="100%">
         {:else}
+        <a href={pdf} target="_blank">
             <img src={t_1} alt="Página 1 de tablero de comunicaciones" style="margin-bottom: 6cqw;">
+        </a>
+
+        <a href={t_2} target="_blank">
             <img src={t_2} alt="Página 2 de tablero de comunicaciones">
+        </a>
         {/if}
     </div>
 </div>

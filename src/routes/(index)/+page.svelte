@@ -5,6 +5,21 @@
     
     import alumnos1 from "$lib/img/alumnos/alumnos1.jpg";
     import alumnos2 from "$lib/img/alumnos/alumnos2.jpg";
+
+    import {roomA} from "$lib/componentes/vars";
+    import {roomB} from "$lib/componentes/vars";
+    
+    function selA ()
+    {
+        $roomA = true
+        $roomB = false
+    }
+    function selB ()
+    {
+        $roomA = false
+        $roomB = true
+    }
+    
 </script>
 
 <div class="logo" style:--col_fondo={col_fondo} style:--col_menus={col_menus} style:--col_detail={col_detail} style:--col_hover={col_hover}>
@@ -43,17 +58,19 @@
 
 <div class="fotos">
     <div class="fot1">
-        <div class="clase"><h2>Clase 5ºA</h2></div>
-        <img src={alumnos2} alt="Alumnos de 5ºA">
-        <div class="dark"/>
-        
+        <a href="/alumnos#clases" on:click={selA}>
+            <div class="clase"><h2>Clase 5ºA</h2></div>
+                <img src={alumnos2} alt="Alumnos de 5ºA">
+            <div class="dark"/>
+        </a>
     </div>
 
     <div class="fot2">
-        <div class="clase"><h2>Clase 5ºB</h2></div>
-        <img src={alumnos1} alt="Alumnos de 5ºB">
-        <div class="dark"/>
-        
+        <a href="/alumnos#clases"  on:click={selB}>
+            <div class="clase"><h2>Clase 5ºB</h2></div>
+                <img src={alumnos1} alt="Alumnos de 5ºB">
+            <div class="dark"/>
+        </a>
    </div>
 
 </div>
@@ -133,6 +150,7 @@
     {
         width: 95%;
         height: fit-content;
+        filter:grayscale(0%);
     }
 }
 
@@ -143,6 +161,8 @@
     align-items: center;
 
     margin-top: 9cqw ;
+
+    cursor: pointer;
 
     position: absolute;
     top: 0;
@@ -170,6 +190,11 @@
     {
         background-color: rgba(0, 0, 0, 0);
         
+    }
+
+    @media screen and (max-width: 750px)
+    {
+        background-color: rgba(0, 0, 0, 0);
     }
 }
 

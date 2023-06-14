@@ -31,6 +31,7 @@
     
     import {roomA} from "$lib/componentes/vars";
     import {roomB} from "$lib/componentes/vars";
+    
 
     function selA ()
     {
@@ -59,8 +60,8 @@
 frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 allowfullscreen/>
 
-<div class="select">
-    <div class="A" on:click={selA} style="background-color: {$roomA ? '#009A7B' : '#4ED1AF'}"><h2>Clase 5º A</h2></div>
+<div class="select" id="clases">
+    <div class="A"  on:click={selA} style="background-color: {$roomA ? '#009A7B' : '#4ED1AF'}"><h2>Clase 5º A</h2></div>
     <div class="B" on:click={selB} style="background-color: {$roomB ? '#009A7B' : '#4ED1AF'}"><h2>Clase 5º B</h2></div>
 </div>
 
@@ -237,6 +238,8 @@ allowfullscreen/>
     margin: auto;
 
     margin-bottom: 3cqw;
+
+    scroll-margin: 8cqw;
 
     @media screen and (max-width: 750px)
     {
