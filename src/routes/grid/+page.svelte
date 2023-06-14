@@ -25,8 +25,8 @@ import picto5 from "$lib/img/Locales/zapateria/zapateria.png"
             <div class="A"> <Icono src={picto1} alt="Carinicería" nombre="Carnicería" href="/carniceria"/></div>
             <div class="B"> <Icono src={picto2} alt="Joyería" nombre="Joyería" href="/joyeria"/></div>
             <div class="C"> <Icono src={picto3} alt="Óptica" nombre="Óptica" href="/optica"/></div>
-            <div class="D"><Icono src={picto1} alt="Carinicería" nombre="Carnicería" href="/carniceria"/></div>
-            <div class="E"><Icono src={picto2} alt="Joyería" nombre="Joyería" href="/joyeria"/></div>
+            <div class="D"><Icono src={picto4} alt="Carinicería" nombre="Carnicería" href="/carniceria"/></div>
+            <div class="E"><Icono src={picto5} alt="Joyería" nombre="Joyería" href="/joyeria"/></div>
           </div>
         
         
