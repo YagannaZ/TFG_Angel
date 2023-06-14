@@ -15,20 +15,29 @@
     <div class="txt">
         <h1 class="h1">¡ Hola a todos !</h1>
         <p class="p"> Somos alumnos y alumnas de 5º y 6º del Colegio Santa Teresa de Calahorra.
-            Participamos en el proyecto “ Calahorra de todos y para todos “
-            Nosotros nos encargamos de pictografiar los comercios de nuestra localidad.
-            Y nuestros compañeros de FP Básica Especial, los edificios públicos.
-            Y.....¿Qué son los pictogramas ?
-            Son representaciones gráficas sencillas
-            Se utilizan para identificar objetos,
-            conceptos,  acciones,
-            deseos, emociones
-            o transmitir un mensaje
-            Pero….¿ Por qué lo hacemos ?
-            Porque queremos mejorar la accesibilidad cognitiva de las personas .
+            Participamos en el proyecto "Calahorra de todos y para todos" y 
+            nos encargamos de pictografiar los comercios de nuestra localidad, mientras
+            nuestros compañeros de FP Básica Especial, los edificios públicos.
+
+            <br/>
+            <br/>
+            <strong>Y...¿Qué son los pictogramas ?</strong><br/>
+            <br/>
+            Son representaciones gráficas sencillas que se utilizan para identificar objetos,
+            conceptos,  acciones, deseos, emociones
+            o transmitir un mensaje.
+
+            <br/>
+            <br/>
+            <strong>¿Por qué lo hacemos ?</strong><br/>
+            <br/>
+            Porque queremos mejorar la accesibilidad cognitiva de las personas.
             Así, fomentamos  la participación en la ciudad de todas las personas
-            y  que todos disfrutemos  del entorno con autonomía.
-            Su uso redunda en beneficio de  tooooooooda la ciudadanía.</p>
+            y que todos disfrutemos  del entorno con autonomía.
+
+            <br/>
+            <br/>
+            <strong>Su uso redunda en beneficio de  tooooooooda la ciudadanía.</strong></p>
     </div>
 </div>
 
@@ -62,6 +71,13 @@
     padding: 1.5cqw;
     height: fit-content;
     margin-bottom: 3cqw;
+
+    @media screen and (max-width: 750px)
+    {
+        margin-top: 23cqw;
+        width: 90%;
+        border-radius: 8px;
+    }
 }
 
 .cont_txt
@@ -75,17 +91,28 @@
     line-height: 1.2cqw;
 
     margin-bottom: 1cqw;
+
+    @media screen and (max-width: 750px)
+    {
+    width: 80%;
+    border-radius: 8px;
+    padding: 4cqw;
+    }
 }
 
 .fotos
 {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     
+    @media screen and (max-width: 750px)
+    {
+        flex-direction: column;
+    }
 }
 
 .fot1, .fot2
@@ -100,6 +127,12 @@
     &:hover
     {
         filter:grayscale(0%);
+    }
+
+    @media screen and (max-width: 750px)
+    {
+        width: 95%;
+        height: fit-content;
     }
 }
 
@@ -118,6 +151,10 @@
     width: 100%;
     height: 100%;
 
+    @media screen and (max-width: 750px)
+    {
+        margin-top: 18cqw ;
+    }
 }
 
 .dark
@@ -145,17 +182,35 @@
     {
         margin-bottom: 1.5cqw;
         font-size: 1.5cqw;
-    }
 
-h2 
-{
-    color: white;
-    font-size: 2.5cqw;
-}
+        @media screen and (max-width: 750px)
+        {
+            font-size: 6cqw;
+            margin-bottom: 6cqw;
+            margin-top: 4cqw;
+        }
+    }
 .p
 {
     font-size: 0.7cqw;
     text-align: justify;
+
+    @media screen and (max-width: 750px)
+    {
+        font-size: 4cqw;
+        line-height: 5cqw;
+    }
+}
+
+h2
+{
+    color: white;
+    font-size: 3cqw;
+
+    @media screen and (max-width: 750px)
+    {
+        font-size: 8cqw;
+    }
 }
 
 </style>

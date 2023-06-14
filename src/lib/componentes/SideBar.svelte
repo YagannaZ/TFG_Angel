@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="a-menu">
-                    <a href="/">Asterics Grid</a>
+                    <a href="/asterics">Asterics Grid</a>
                 </div>
 
                 <div class="a-menu">

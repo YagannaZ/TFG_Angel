@@ -2,6 +2,8 @@ import { writable } from "svelte/store";
 
 export let menu_open  = writable(false);
 
+export let room = writable(false);
+
 
 //COLORES
 export let col_fondo = "#C8FCEA";
