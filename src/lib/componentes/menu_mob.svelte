@@ -22,16 +22,20 @@
                 </div>
 
                 <div class="a-menu">
-                    <a href="/carniceria">Inicio</a>
+                    <a href="/">Inicio</a>
+                </div>
+
+                <div class="a-menu">
+                    <a href="/grid">Comercios</a>
                 </div>
 
                 <div class="a-menu" >
                     <a href="/colaboradores">Colaboradores</a>
                 </div>
 
-                <div class="a-menu">
+                <!-- <div class="a-menu">
                     <a href="/">Asterics Grid</a>
-                </div>
+                </div> -->
 
                 <div class="a-menu">
                     <a href="/alumnos">Trabajo de Alumnos</a>

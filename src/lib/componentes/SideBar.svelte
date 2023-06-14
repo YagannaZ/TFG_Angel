@@ -20,7 +20,11 @@
                 </div>
 
                 <div class="a-menu">
-                    <a href="/carniceria">Inicio</a>
+                    <a href="/">Inicio</a>
+                </div>
+
+                <div class="a-menu">
+                    <a href="/grid">Comercios</a>
                 </div>
 
                 <div class="a-menu" >
@@ -28,7 +32,7 @@
                 </div>
 
                 <div class="a-menu">
-                    <a href="/">Asterics Grid</a>
+                    <a href="/asterics">Asterics Grid</a>
                 </div>
 
                 <div class="a-menu">

@@ -1,6 +1,13 @@
 {
+	"/(index)": [],
 	"/": [],
 	"/alumnos": [],
+	"/asterics": [],
 	"/carniceria": [],
-	"/colaboradores": []
+	"/colaboradores": [],
+	"/grid": [],
+	"/joyeria": [],
+	"/optica": [],
+	"/tienda_ropa": [],
+	"/zapateria": []
 }

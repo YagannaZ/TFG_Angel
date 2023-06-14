@@ -3,8 +3,8 @@
 
     export let pdf: any;
     export let tiponegocio: any;
-    import t_1 from "$lib/img/Locales/carniceria/T_carniceria-1.png"
-    import t_2 from "$lib/img/Locales/carniceria/T_carniceria-2.png"
+    export let t_1 :string;
+    export let t_2 :string;
 
     import {col_fondo, col_menus, col_detail, col_hover} from "$lib/componentes/colores";
 
@@ -22,7 +22,7 @@
 
 <div class="cont_pdf">
     <div class="picto">
-        <a href="https://arasaac.org/pictograms/es/3007/carnicer%C3%ADa">
+        <a href={picto} target="_blank">
             <img src={picto} alt="Pictografía identificativa del negocio">
         </a>
     </div>
@@ -30,8 +30,13 @@
         {#if innerWidth >= ancho}
             <embed src={pdf} type="application/pdf" width="100%" height="100%">
         {:else}
+        <a href={pdf} target="_blank">
             <img src={t_1} alt="Página 1 de tablero de comunicaciones" style="margin-bottom: 6cqw;">
+        </a>
+
+        <a href={t_2} target="_blank">
             <img src={t_2} alt="Página 2 de tablero de comunicaciones">
+        </a>
         {/if}
     </div>
 </div>
@@ -50,8 +55,8 @@
         background-color:var(--col_detail); 
         border-radius: 20px;
         margin-bottom: 2cqw;
-        
-        > *
+
+        > p
         {
             font-size: 3cqw;
             font-weight: bold;
@@ -78,7 +83,7 @@
 
             
         align-items: center;
-        background-color:rgb(239, 255, 241);
+        background-color:rgb(255, 255, 255);
         border-radius: 20px;
         width: 45cqw;
         height: 156cqw;

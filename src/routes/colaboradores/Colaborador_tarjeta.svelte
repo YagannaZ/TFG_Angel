@@ -13,7 +13,7 @@
         <a class="logo" href={link}>
             <img src={logo} alt="Logo de colaborador">
         </a>
-        <a class="txt" href="https://arasaac.org/">
+        <a class="txt" href="">
             <p>{txt}</p>
         </a>
     </div>
@@ -34,6 +34,7 @@
     @media screen and (max-width: 750px)
     {
         width: 95cqw; 
+        margin-bottom: 16cqw;
     }
 }
 
@@ -78,6 +79,7 @@
             width: 70cqw;  
             height: 4.8cqw;
             border-radius: 5px;
+            margin-top: 3cqw;
         }
 
         > p
@@ -89,7 +91,7 @@
 
             @media screen and (max-width: 750px)
             {
-                font-size: 3cqw;
+                font-size: 4cqw;
             }
         }
     }
