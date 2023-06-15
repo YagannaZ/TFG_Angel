@@ -57,7 +57,7 @@
         align-items: center;
         justify-content: space-between;
 
-        width: 11cqw;
+        width: 11cqw; 
         height: 20cqw;
 
         border-radius: 15px;
